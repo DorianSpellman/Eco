@@ -217,7 +217,7 @@ def handler_function(request):
 ### Finish
 
     if state == 100:
-        message = choice(['До новых встреч!', "Спасибо, что интересуетесь экологией!", "Проведите день чудесно!"])
+        message = choice(['До новых встреч!', "Спасибо, что интересуетесь экологией!", "Проведите день с пользой!"])
         tts = message
         end_session = True
 
