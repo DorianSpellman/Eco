@@ -62,7 +62,7 @@ def handler_function(request):
             message = mat[9] + '\n' + "Использование: " + using[9] + '\n'+ rec[9]
             tts = message
 
-        elif 'двадцать один' in list_of_request or '21' in list_of_request:
+        elif ('двадцать' and 'один') in list_of_request or '21' in list_of_request:
             message = mat[10] + '\n' + "Использование: " + using[10] + '\n'+ rec[10]
             tts = message
 
