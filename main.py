@@ -21,8 +21,7 @@ def handler_function(request):
     session = request['session']
     version = request['version']
     request = request['request']
-    list_of_request = request['command']
-    #list_of_request = request['nlu']['tokens']
+    list_of_request = request['nlu']['tokens']
 
 ### Start
     if session['new'] or state == 0:
