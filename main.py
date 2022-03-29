@@ -56,43 +56,7 @@ def handler_function(request):
 
 ### Main part
 
-# Plastic
-        elif 'один' in list_of_request or '01' in list_of_request or '1' in list_of_request or 'пэт' in list_of_request or 'pet' in list_of_request or 'pete' in list_of_request:
-            message = mat[0] + '\n'+ "Использование: " + using[0] + '\n' + rec[0]
-            tts = message
 
-        elif 'два' in list_of_request or '02' in list_of_request or '2' in list_of_request or 'пэ' in list_of_request or 'пнд' in list_of_request or 'пэвп' in list_of_request or 'ашдипии' in list_of_request or 'хдпе' in list_of_request or 'hdpe' in list_of_request or 'pehd' in list_of_request:
-            message = mat[1] + '\n' + "Использование: " + using[1] + '\n'+ rec[1]
-            tts = message
-
-        elif 'три' in list_of_request or '03' in list_of_request or '3' in list_of_request or 'пвх' in list_of_request or 'пвс' in list_of_request or 'пвк' in list_of_request or 'pvc' in list_of_request:
-            message = mat[2] + '\n' + "Использование: " + using[2] + '\n'+ rec[2]
-            tts = message
-
-        elif 'четыре' in list_of_request or '04' in list_of_request or '4' in list_of_request or 'пвд' in list_of_request or 'пэнп' in list_of_request or 'лдпе' in list_of_request or 'ldpe' in list_of_request or 'peld' in list_of_request:
-            message = mat[3] + '\n' + "Использование: " + using[3] + '\n'+ rec[3]
-            tts = message
-
-        elif 'пять' in list_of_request or '05' in list_of_request or '5' in list_of_request or 'пп' in list_of_request or 'pp' in list_of_request or 'рр' in list_of_request:
-            message = mat[4] + '\n' + "Использование: " + using[4] + '\n'+ rec[4]
-            tts = message
-
-        elif 'шесть' in list_of_request or '06' in list_of_request or '6' in list_of_request or 'пс' in list_of_request or 'ps' in list_of_request:
-            message = mat[5] + '\n' + "Использование: " + using[5] + '\n'+ rec[5]
-            tts = message
-
-        elif 'семь' in list_of_request or '07' in list_of_request or '7' in list_of_request or 'о' in list_of_request or 'o' in list_of_request or 'other' in list_of_request or 'другое' in list_of_request:
-            message = mat[6] + '\n' + "Использование: " + using[6] + '\n'+ rec[6]
-            tts = message
-
-        elif 'абс' in list_of_request or 'abs' in list_of_request:
-            message = mat[7] + '\n' + "Использование: " + using[7] + '\n'+ rec[7]
-            tts = message
-
-        elif 'пк' in list_of_request or 'рс' in list_of_request or 'pc' in list_of_request:
-            message = mat[8] + '\n' + "Использование: " + using[8] + '\n'+ rec[8]
-            tts = message
-    
 # Paper
         elif 'двадцать' in list_of_request or '20' in list_of_request:
             message = mat[9] + '\n' + "Использование: " + using[9] + '\n'+ rec[9]
@@ -209,6 +173,44 @@ def handler_function(request):
         elif 'эс лдпе' in list_of_request or 'эс алу' in list_of_request or 'эс пап' in list_of_request or 'эс пэпэ' in list_of_request or 'c/pap' in list_of_request or 'с/рар' in list_of_request or 'с/рр' in list_of_request or 'c/pp' in list_of_request or 'c/ldpe' in list_of_request or 'c/alu' in list_of_request:
             message = "Композиционный материал, выполненный из смеси различных материалов" + '\n\n' + "Использование: кофе, соусы, сгущенка, лапша быстрого приготовления, зубная паста, косметический крем" + '\n\n'+ rec[34]
             tts = message
+
+# Plastic
+        elif 'один' in list_of_request or '01' in list_of_request or '1' in list_of_request or 'пэт' in list_of_request or 'pet' in list_of_request or 'pete' in list_of_request:
+            message = mat[0] + '\n'+ "Использование: " + using[0] + '\n' + rec[0]
+            tts = message
+
+        elif 'два' in list_of_request or '02' in list_of_request or '2' in list_of_request or 'пэ' in list_of_request or 'пнд' in list_of_request or 'пэвп' in list_of_request or 'ашдипии' in list_of_request or 'хдпе' in list_of_request or 'hdpe' in list_of_request or 'pehd' in list_of_request:
+            message = mat[1] + '\n' + "Использование: " + using[1] + '\n'+ rec[1]
+            tts = message
+
+        elif 'три' in list_of_request or '03' in list_of_request or '3' in list_of_request or 'пвх' in list_of_request or 'пвс' in list_of_request or 'пвк' in list_of_request or 'pvc' in list_of_request:
+            message = mat[2] + '\n' + "Использование: " + using[2] + '\n'+ rec[2]
+            tts = message
+
+        elif 'четыре' in list_of_request or '04' in list_of_request or '4' in list_of_request or 'пвд' in list_of_request or 'пэнп' in list_of_request or 'лдпе' in list_of_request or 'ldpe' in list_of_request or 'peld' in list_of_request:
+            message = mat[3] + '\n' + "Использование: " + using[3] + '\n'+ rec[3]
+            tts = message
+
+        elif 'пять' in list_of_request or '05' in list_of_request or '5' in list_of_request or 'пп' in list_of_request or 'pp' in list_of_request or 'рр' in list_of_request:
+            message = mat[4] + '\n' + "Использование: " + using[4] + '\n'+ rec[4]
+            tts = message
+
+        elif 'шесть' in list_of_request or '06' in list_of_request or '6' in list_of_request or 'пс' in list_of_request or 'ps' in list_of_request:
+            message = mat[5] + '\n' + "Использование: " + using[5] + '\n'+ rec[5]
+            tts = message
+
+        elif 'семь' in list_of_request or '07' in list_of_request or '7' in list_of_request or 'о' in list_of_request or 'o' in list_of_request or 'other' in list_of_request or 'другое' in list_of_request:
+            message = mat[6] + '\n' + "Использование: " + using[6] + '\n'+ rec[6]
+            tts = message
+
+        elif 'абс' in list_of_request or 'abs' in list_of_request:
+            message = mat[7] + '\n' + "Использование: " + using[7] + '\n'+ rec[7]
+            tts = message
+
+        elif 'пк' in list_of_request or 'рс' in list_of_request or 'pc' in list_of_request:
+            message = mat[8] + '\n' + "Использование: " + using[8] + '\n'+ rec[8]
+            tts = message
+    
 
 ### Another answer
         else:
