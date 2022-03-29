@@ -57,7 +57,7 @@ def handler_function(request):
 
 # Paper
 
-        elif list_of_request.values() == ["двадцать", "один"] or '21' in list_of_request:
+        elif "двадцать один" in list_of_request or '21' in list_of_request:
             message = mat[10] + '\n' + "Использование: " + using[10] + '\n'+ rec[10]
             tts = message
 
