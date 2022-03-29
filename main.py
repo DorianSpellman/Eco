@@ -57,7 +57,7 @@ def handler_function(request):
 
 # Paper
 
-        elif "двадцать один" in list_of_request or '21' in list_of_request:
+        elif ('двадцать' in list_of_request and 'один' in list_of_request) or '21' in list_of_request:
             message = mat[10] + '\n' + "Использование: " + using[10] + '\n'+ rec[10]
             tts = message
 
@@ -65,7 +65,7 @@ def handler_function(request):
             message = mat[11] + '\n' + "Использование: " + using[11] + '\n'+ rec[11]
             tts = message
 
-        elif 'двадцать три' in list_of_request or '23' in list_of_request:
+        elif ('двадцать' in list_of_request and 'три' in list_of_request) or '23' in list_of_request:
             message = mat[12] + '\n' + "Использование: " + using[12] + '\n'+ rec[12]
             tts = message
         
@@ -79,7 +79,7 @@ def handler_function(request):
 
 # Metals
 
-        elif 'сорок один' in list_of_request or '41' in list_of_request or 'ал' in list_of_request or 'al' in list_of_request or 'алу' in list_of_request or 'alu' in list_of_request:
+        elif ('сорок' in list_of_request and 'один' in list_of_request) or '41' in list_of_request or 'ал' in list_of_request or 'al' in list_of_request or 'алу' in list_of_request or 'alu' in list_of_request:
             message = mat[14] + '\n' + "Использование: " + using[14] + '\n'+ rec[14]
             tts = message
 
@@ -89,7 +89,7 @@ def handler_function(request):
         
 # Organic materials of natural origin
 
-        elif 'пятьдесят один' in list_of_request or '51' in list_of_request:
+        elif ('пятьдесят' in list_of_request and 'один' in list_of_request) or '51' in list_of_request:
             message = mat[16] + '\n' + "Использование: " + using[16] + '\n'+ rec[16]
             tts = message
 
@@ -97,7 +97,7 @@ def handler_function(request):
             message = mat[15] + '\n' + "Использование: " + using[15] + '\n'+ rec[15]
             tts = message
 
-        elif 'шестьдесят один' in list_of_request or '61' in list_of_request:
+        elif ('шестьдесят' in list_of_request and 'один' in list_of_request) or '61' in list_of_request:
             message = mat[18] + '\n' + "Использование: " + using[18] + '\n'+ rec[18]
             tts = message
         
@@ -108,39 +108,39 @@ def handler_function(request):
 
 # Glass
         
-        elif 'семьдесят один' in list_of_request or '71' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'один' in list_of_request) or '71' in list_of_request:
             message = mat[20] + '\n' + "Использование: " + using[20] + '\n'+ rec[20]
             tts = message
 
-        elif 'семьдесят два' in list_of_request or '72' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'два' in list_of_request) or '72' in list_of_request:
             message = mat[21] + '\n' + "Использование: " + using[21] + '\n'+ rec[21]
             tts = message
         
-        elif 'семьдесят три' in list_of_request or '73' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'три' in list_of_request) or '73' in list_of_request:
             message = mat[22] + '\n' + "Использование: " + using[22] + '\n'+ rec[22]
             tts = message
 
-        elif 'семьдесят четыре' in list_of_request or '74' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'четыре' in list_of_request) or '74' in list_of_request:
             message = mat[23] + '\n' + "Использование: " + using[23] + '\n'+ rec[23]
             tts = message
         
-        elif 'семьдесят пять' in list_of_request or '75' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'пять' in list_of_request) or '75' in list_of_request:
             message = mat[24] + '\n' + "Использование: " + using[24] + '\n'+ rec[24]
             tts = message
 
-        elif 'семьдесят шесть' in list_of_request or '76' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'шесть' in list_of_request) or '76' in list_of_request:
             message = mat[25] + '\n' + "Использование: " + using[25] + '\n'+ rec[25]
             tts = message
 
-        elif 'семьдесят семь' in list_of_request or '77' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'семь' in list_of_request) or '77' in list_of_request:
             message = mat[26] + '\n' + "Использование: " + using[26] + '\n'+ rec[26]
             tts = message
         
-        elif 'семьдесят восемь' in list_of_request or '78' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'восемь' in list_of_request) or '78' in list_of_request:
             message = mat[27] + '\n' + "Использование: " + using[27] + '\n'+ rec[27]
             tts = message
 
-        elif 'семьдесят девять' in list_of_request or '79' in list_of_request:
+        elif ('семьдесят' in list_of_request and 'девять' in list_of_request) or '79' in list_of_request:
             message = mat[28] + '\n' + "Использование: " + using[28] + '\n'+ rec[28]
             tts = message
 
@@ -149,23 +149,23 @@ def handler_function(request):
             tts = message
         
 # Composite materials
-        elif 'восемьдесят один' in list_of_request or '81' in list_of_request:
+        elif ('восемьдесят' in list_of_request and 'один' in list_of_request) or '81' in list_of_request:
             message = mat[29] + '\n' + "Использование: " + using[29] + '\n'+ rec[29]
             tts = message
 
-        elif 'восемьдесят два' in list_of_request or '82' in list_of_request:
+        elif ('восемьдесят' in list_of_request and 'два' in list_of_request) or '82' in list_of_request:
             message = mat[30] + '\n' + "Использование: " + using[30] + '\n'+ rec[30]
             tts = message
         
-        elif 'восемьдесят четыре' in list_of_request or '84' in list_of_request:
+        elif ('восемьдесят' in list_of_request and 'четыре' in list_of_request) or '84' in list_of_request:
             message = mat[31] + '\n' + "Использование: " + using[31] + '\n'+ rec[31]
             tts = message
        
-        elif 'девяносто два' in list_of_request or '92' in list_of_request:
+        elif ('девяносто' in list_of_request and 'два' in list_of_request) or '92' in list_of_request:
             message = mat[33] + '\n' + "Использование: " + using[33] + '\n'+ rec[33]
             tts = message
 
-        elif 'девяносто восемь' in list_of_request or '98' in list_of_request:
+        elif ('девяносто' in list_of_request and 'восемь' in list_of_request) or '98' in list_of_request:
             message = mat[34] + '\n' + "Использование: " + using[34] + '\n'+ rec[34]
             tts = message
         
