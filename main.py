@@ -70,7 +70,7 @@ def handler_function(request):
             message = mat[12] + '\n' + "Использование: " + using[12] + '\n'+ rec[12]
             tts = message
         
-        elif 'двадцать' in tokens or '20' in tokens:
+        elif ('двадцать' in tokens and '' in tokens) or '20' in tokens:
             message = mat[9] + '\n' + "Использование: " + using[9] + '\n'+ rec[9]
             tts = message
         
