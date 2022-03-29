@@ -58,11 +58,9 @@ def handler_function(request):
 
 
 # Paper
-        elif 'двадцать' in list_of_request or '20' in list_of_request:
-            message = mat[9] + '\n' + "Использование: " + using[9] + '\n'+ rec[9]
-            tts = message
+        
 
-        elif ('двадцать' and 'один') in list_of_request or '21' in list_of_request:
+        elif 'двадцать один' in list_of_request or '21' in list_of_request:
             message = mat[10] + '\n' + "Использование: " + using[10] + '\n'+ rec[10]
             tts = message
 
@@ -72,6 +70,10 @@ def handler_function(request):
 
         elif 'двадцать три' in list_of_request or '23' in list_of_request:
             message = mat[12] + '\n' + "Использование: " + using[12] + '\n'+ rec[12]
+            tts = message
+        
+        elif 'двадцать' in list_of_request or '20' in list_of_request:
+            message = mat[9] + '\n' + "Использование: " + using[9] + '\n'+ rec[9]
             tts = message
         
         elif 'пэп' in list_of_request or 'пап' in list_of_request or 'рар' in list_of_request or 'pap' in list_of_request:
