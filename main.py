@@ -63,7 +63,7 @@ def handler_function(request):
 
 
 # Paper
-    elif state == 20:
+    if state == 20:
 
         if 'двадцать один' in list_of_request or '21' in list_of_request:
             message = mat[10] + '\n' + "Использование: " + using[10] + '\n'+ rec[10]
