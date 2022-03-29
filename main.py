@@ -46,18 +46,24 @@ def handler_function(request):
         if 'код' in list_of_request or 'кот' in list_of_request:
             message = ("Код переработки — это треугольник с цифрой внутри. Цифры обозначают материал, из которого сделан предмет")
             tts = "Код переработки — это треугольник с цифрой внутри. Цифры обозначают материал, из которого сделан предмет"
+            state = 20
 
         elif 'второе' in list_of_request or 'идентификатор' in list_of_request:
             message = ('Идентификатор переработки — это буквы на русском или латинице, расположенные под треугольником с цифрой внутри')
             tts = 'Идентификатор переработки — это буквы на русском или латинице, расположенные под треугольником с цифрой внутри'
+            state = 20
 
         elif 'спасибо' in list_of_request or 'стоп' in list_of_request or 'выход' in list_of_request or 'не' in list_of_request or 'заверши' in list_of_request or 'пока' in list_of_request:
             state = 100
+
+        else:
+            state = 20
 
 ### Main part
 
 
 # Paper
+    elif state == 20:
 
         if 'двадцать один' in list_of_request or '21' in list_of_request:
             message = mat[10] + '\n' + "Использование: " + using[10] + '\n'+ rec[10]
