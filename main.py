@@ -21,7 +21,7 @@ def handler_function(request):
     session = request['session']
     version = request['version']
     request = request['request']
-    list_of_request = request['command']
+    list_of_request = request['original_utterance']
 
 ### Start
     if session['new'] or state == 0:
@@ -54,7 +54,6 @@ def handler_function(request):
             state = 100
 
 ### Main part
-
 
 # Paper
 
