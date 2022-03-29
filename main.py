@@ -21,7 +21,7 @@ def handler_function(request):
     session = request['session']
     version = request['version']
     request = request['request']
-    list_of_request = request['original_utterance']
+    list_of_request = request['nlu']['tokens']
 
 ### Start
     if session['new'] or state == 0:
@@ -45,10 +45,12 @@ def handler_function(request):
         if 'код' in list_of_request or 'кот' in list_of_request:
             message = ("Код переработки — это треугольник с цифрой внутри. Цифры обозначают материал, из которого сделан предмет")
             tts = "Код переработки — это треугольник с цифрой внутри. Цифры обозначают материал, из которого сделан предмет"
+            buttons = button('Что такое идентификатор?')
 
         elif 'второе' in list_of_request or 'идентификатор' in list_of_request:
             message = ('Идентификатор переработки — это буквы на русском или латинице, расположенные под треугольником с цифрой внутри')
             tts = 'Идентификатор переработки — это буквы на русском или латинице, расположенные под треугольником с цифрой внутри'
+            buttons = button('Что такое код?')
 
         elif 'спасибо' in list_of_request or 'стоп' in list_of_request or 'выход' in list_of_request or 'не' in list_of_request or 'заверши' in list_of_request or 'пока' in list_of_request:
             state = 100
