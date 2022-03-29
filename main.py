@@ -76,7 +76,7 @@ def handler_function(request):
             tts = message
         
         elif 'пэп' in list_of_request or 'пап' in list_of_request or 'рар' in list_of_request or 'pap' in list_of_request:
-            message = "Целлюлозная продукция (гофрированный картон, картон, бумага)." + '\n\n' + "Использование: Коробки, открытки, журналы, газеты, офисная бумага." + '\n' + rec[9]
+            message = "Целлюлозная продукция (гофрированный картон, картон, бумага)." + '\n\n' + "Использование: Коробки, открытки, журналы, газеты, офисная бумага." + '\n\n' + rec[9]
             tts = message
 
 # Metals
