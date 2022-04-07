@@ -51,7 +51,7 @@ def handler_function(request):
             message = ('Идентификатор переработки — это буквы на русском или латинице, расположенные под треугольником с цифрой внутри')
             tts = 'Идентификатор переработки — это буквы на русском или латинице, расположенные под треугольником с цифрой внутри'
 
-        elif 'спасибо' in tokens or 'стоп' in tokens or 'выход' in tokens or 'не' in tokens or 'заверши' in tokens or 'пока' in tokens:
+        elif 'спасибо' in tokens or 'стоп' in tokens or 'выход' in tokens or 'не' in tokens or 'заверши' in tokens or 'пока' in tokens or 'хватит' in tokens:
             state = 100
 
 ### Main part
@@ -159,7 +159,7 @@ def handler_function(request):
             tts = message
         
         elif ('восемьдесят' in tokens and 'четыре' in tokens) or '84' in tokens:
-            message = mat[31] + '\n' + "Примеры использования: " + using[31] + '\n'+ rec[31]
+            message = mat[31] + '\n' + using[31] + '\n'+ rec[31]
             tts = message
        
         elif ('девяносто' in tokens and 'два' in tokens) or '92' in tokens:
@@ -167,7 +167,7 @@ def handler_function(request):
             tts = message
 
         elif ('девяносто' in tokens and 'восемь' in tokens) or '98' in tokens:
-            message = mat[34] + '\n' + "Примеры использования: " + using[34] + '\n'+ rec[34]
+            message = mat[34] + '\n' + using[34] + '\n'+ rec[34]
             tts = message
         
         elif 'девяносто' in tokens or '90' in tokens:
