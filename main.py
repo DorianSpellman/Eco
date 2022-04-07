@@ -110,23 +110,23 @@ def handler_function(request):
 # Glass
         
         elif ('семьдесят' in tokens and 'один' in tokens) or '71' in tokens:
-            message = mat[20] + '\n' + "Примеры использования: " + using[20] + '\n'+ rec[20]
+            message = mat[20] + '\n' + using[20] + '\n'+ rec[20]
             tts = message
 
         elif ('семьдесят' in tokens and 'два' in tokens) or '72' in tokens:
-            message = mat[21] + '\n' + "Примеры использования: " + using[21] + '\n'+ rec[21]
+            message = mat[21] + '\n' + using[21] + '\n'+ rec[21]
             tts = message
         
         elif ('семьдесят' in tokens and 'три' in tokens) or '73' in tokens:
-            message = mat[22] + '\n' + "Примеры использования: " + using[22] + '\n'+ rec[22]
+            message = mat[22] + '\n' + using[22] + '\n'+ rec[22]
             tts = message
 
         elif ('семьдесят' in tokens and 'четыре' in tokens) or '74' in tokens:
-            message = mat[23] + '\n' + "Примеры использования: " + using[23] + '\n'+ rec[23]
+            message = mat[23] + '\n' + using[23] + '\n'+ rec[23]
             tts = message
         
         elif ('семьдесят' in tokens and 'пять' in tokens) or '75' in tokens:
-            message = mat[24] + '\n' + "Примеры использования: " + using[24] + '\n'+ rec[24]
+            message = mat[24] + '\n' + using[24] + '\n'+ rec[24]
             tts = message
 
         elif ('семьдесят' in tokens and 'шесть' in tokens) or '76' in tokens:
@@ -134,15 +134,15 @@ def handler_function(request):
             tts = message
 
         elif ('семьдесят' in tokens and 'семь' in tokens) or '77' in tokens:
-            message = mat[26] + '\n' + "Примеры использования: " + using[26] + '\n'+ rec[26]
+            message = mat[26] + '\n' + using[26] + '\n'+ rec[26]
             tts = message
         
         elif ('семьдесят' in tokens and 'восемь' in tokens) or '78' in tokens:
-            message = mat[27] + '\n' + "Примеры использования: " + using[27] + '\n'+ rec[27]
+            message = mat[27] + '\n' + using[27] + '\n'+ rec[27]
             tts = message
 
         elif ('семьдесят' in tokens and 'девять' in tokens) or '79' in tokens:
-            message = mat[28] + '\n' + "Примеры использования: " + using[28] + '\n'+ rec[28]
+            message = mat[28] + '\n' + using[28] + '\n'+ rec[28]
             tts = message
 
         elif 'семьдесят' in tokens or '70' in tokens:
