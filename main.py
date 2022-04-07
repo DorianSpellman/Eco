@@ -185,7 +185,7 @@ def handler_function(request):
 
         elif 'два' in tokens or '02' in tokens or '2' in tokens or 'пэ' in tokens or 'пнд' in tokens or 'пэвп' in tokens or 'ашдипии' in tokens or 'хдпе' in tokens or 'hdpe' in tokens or 'pehd' in tokens:
             message = mat[1] + '\n' + "Примеры использования: " + using[1] + '\n'+ rec[1]
-            tts = "Полиэтилен низкого давления. Примеры использования: упаковки от шампуня, геля для д` уша, моющих средств. Такие упаковки обычно имеют большой шов на дне. Успешно перерабатывается!"
+            tts = "Полиэтилен низкого давления. Примеры использования: упаковки от шампуня, геля для д`уша, моющих средств. Такие упаковки обычно имеют большой шов на дне. Успешно перерабатывается!"
 
         elif 'три' in tokens or '03' in tokens or '3' in tokens or 'пвх' in tokens or 'пвс' in tokens or 'пвк' in tokens or 'pvc' in tokens:
             message = mat[2] + '\n' + "Примеры использования: " + using[2] + '\n'+ rec[2]
