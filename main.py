@@ -110,7 +110,7 @@ def handler_function(request):
 # Glass
         
         elif ('семьдесят' in tokens and 'один' in tokens) or '71' in tokens:
-            message = mat[20] + '\n' + using[20] + '\n'+ rec[20]
+            message = mat[20] + '\n' + "Примеры использования: " + using[20] + '\n'+ rec[20]
             tts = message
 
         elif ('семьдесят' in tokens and 'два' in tokens) or '72' in tokens:
@@ -146,7 +146,7 @@ def handler_function(request):
             tts = message
 
         elif 'семьдесят' in tokens or '70' in tokens:
-            message = mat[19] + '\n' + "Примеры использования: " + using[19] + '\n'+ rec[19]
+            message = mat[19] + '\n' + using[19] + '\n'+ rec[19]
             tts = message
         
 # Composite materials
