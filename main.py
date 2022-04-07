@@ -214,7 +214,10 @@ def handler_function(request):
         elif 'пк' in tokens or 'рс' in tokens or 'pc' in tokens:
             message = mat[8] + '\n' + "Примеры использования: " + using[8] + '\n'+ rec[8]
             tts = message
-    
+
+        elif 'pa' in tokens or 'па' in tokens or 'ра' in tokens:
+            message = mat[35] + '\n' + "Примеры использования: " + using[35] + '\n'+ rec[35]
+            tts = message
 
 ### Another answer
         else:
