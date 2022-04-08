@@ -279,6 +279,9 @@ def handler_function(request):
             tts = 'М`арганцево-ц`инковый элемент. Используется в батарейках и аккумуляторах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
 
 
+        elif 'luv u' in tokens or '120701' in tokens or '12072001' in tokens  or '12.07.2001' in tokens  or 'love you' in tokens:
+            message = 'luv u too, durling'
+            tts = 'love u too, durling'
 
 ### Another answer
         else:
