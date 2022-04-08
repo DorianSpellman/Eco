@@ -15,6 +15,7 @@ def handler_function(request):
     global using
     global rec
     global mat
+    global boosty
     buttons = []
     end_session = False
     message = ''
@@ -287,8 +288,10 @@ def handler_function(request):
 ### Finish
 
     if state == 100:
+        boosty = "Если вам понравился навык, то вы можете поддержать автора! https://boosty.to/leomilevsky/single-payment/donation/75054?share=target_link"
         message = choice(['До новых встреч!', "Спасибо, что интересуетесь экологией!", "Проведите день с пользой!"])
         tts = message
+        message += boosty
         end_session = True
 
 ### Processing responses
