@@ -54,6 +54,9 @@ def handler_function(request):
         elif 'спасибо' in tokens or 'стоп' in tokens or 'выход' in tokens or 'не' in tokens or 'заверши' in tokens or 'пока' in tokens or 'хватит' in tokens:
             state = 100
 
+        elif 'понятно' in tokens or 'понял' in tokens or 'поняла' in tokens or 'ясно' in tokens or 'хорошо' in tokens or 'окей' in tokens:
+            state = 10
+
 ### Main part
 
 # Plastic
