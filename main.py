@@ -58,11 +58,11 @@ def handler_function(request):
 
 # Plastic
         elif 'один' in tokens or '01' in tokens or '1' in tokens or 'пэт' in tokens or 'pet' in tokens or 'pete' in tokens:
-            message = mat[0] + '\n'+ "Примеры использования: " + using[0] + '\n' + rec[0] + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru/"
-            tts = message + "Ближайший пункт приёма вы можете найти на карте"
+            message = mat[0] + '\n'+ "Примеры использования: " + using[0] + '\n' + rec[0] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
+            tts = message 
 
         elif 'два' in tokens or '02' in tokens or '2' in tokens or 'пэ' in tokens or 'пнд' in tokens or 'пэвп' in tokens or 'ашдипии' in tokens or 'хдпе' in tokens or 'hdpe' in tokens or 'pehd' in tokens:
-            message = mat[1] + '\n' + "Примеры использования: " + using[1] + '\n'+ rec[1]
+            message = mat[1] + '\n' + "Примеры использования: " + using[1] + '\n'+ rec[1] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = "Полиэтилен низкого давления. Примеры использования: упаковки от шампуня, геля для д`уша, моющих средств. Такие упаковки обычно имеют большой шов на дне. Успешно перерабатывается!"
 
         elif 'три' in tokens or '03' in tokens or '3' in tokens or 'пвх' in tokens or 'пвс' in tokens or 'пвк' in tokens or 'pvc' in tokens:
@@ -70,15 +70,15 @@ def handler_function(request):
             tts = message
 
         elif 'четыре' in tokens or '04' in tokens or '4' in tokens or 'пвд' in tokens or 'пэнп' in tokens or 'лдпе' in tokens or 'ldpe' in tokens or 'peld' in tokens:
-            message = mat[3] + '\n' + "Примеры использования: " + using[3] + '\n'+ rec[3]
+            message = mat[3] + '\n' + "Примеры использования: " + using[3] + '\n'+ rec[3] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'пять' in tokens or '05' in tokens or '5' in tokens or 'пп' in tokens or 'pp' in tokens or 'рр' in tokens:
-            message = mat[4] + '\n' + "Примеры использования: " + using[4] + '\n'+ rec[4]
+            message = mat[4] + '\n' + "Примеры использования: " + using[4] + '\n'+ rec[4] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'шесть' in tokens or '06' in tokens or '6' in tokens or 'пс' in tokens or 'ps' in tokens:
-            message = mat[5] + '\n' + "Примеры использования: " + using[5] + '\n'+ rec[5]
+            message = mat[5] + '\n' + "Примеры использования: " + using[5] + '\n'+ rec[5] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'семь' in tokens or '07' in tokens or '7' in tokens or 'о' in tokens or 'o' in tokens or 'other' in tokens or 'другое' in tokens:
@@ -86,47 +86,47 @@ def handler_function(request):
             tts = message
 
         elif 'абс' in tokens or 'abs' in tokens:
-            message = mat[7] + '\n' + "Примеры использования: " + using[7] + '\n'+ rec[7]
+            message = mat[7] + '\n' + "Примеры использования: " + using[7] + '\n'+ rec[7] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'пк' in tokens or 'рс' in tokens or 'pc' in tokens:
-            message = mat[8] + '\n' + "Примеры использования: " + using[8] + '\n'+ rec[8]
+            message = mat[8] + '\n' + "Примеры использования: " + using[8] + '\n'+ rec[8] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'pa' in tokens or 'па' in tokens or 'ра' in tokens:
-            message = mat[9] + '\n' + "Примеры использования: " + using[9] + '\n'+ rec[9]
+            message = mat[9] + '\n' + "Примеры использования: " + using[9] + '\n'+ rec[9] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
 # Paper
 
         elif 'двадцать' in tokens or '20' in tokens:
-            message = mat[10] + '\n' + "Примеры использования: " + using[10] + '\n'+ rec[10]
+            message = mat[10] + '\n' + "Примеры использования: " + using[10] + '\n'+ rec[10] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('двадцать' in tokens and 'один' in tokens) or '21' in tokens:
-            message = mat[11] + '\n' + "Примеры использования: " + using[11] + '\n'+ rec[11]
+            message = mat[11] + '\n' + "Примеры использования: " + using[11] + '\n'+ rec[11] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('двадцать' in tokens and 'два' in tokens) or '22' in tokens:
-            message = mat[12] + '\n' + "Примеры использования: " + using[12] + '\n'+ rec[12]
+            message = mat[12] + '\n' + "Примеры использования: " + using[12] + '\n'+ rec[12] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('двадцать' in tokens and 'три' in tokens) or '23' in tokens:
-            message = mat[13] + '\n' + "Примеры использования: " + using[13] + '\n'+ rec[13]
+            message = mat[13] + '\n' + "Примеры использования: " + using[13] + '\n'+ rec[13] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
                 
         elif 'пэп' in tokens or 'пап' in tokens or 'рар' in tokens or 'pap' in tokens:
-            message = "Целлюлозная продукция (гофрированный картон, картон, бумага)." + '\n\n' + "Примеры использования: коробки, открытки, журналы, газеты, офисная бумага." + '\n\n' + rec[9]
+            message = "Целлюлозная продукция (гофрированный картон, картон, бумага)." + '\n\n' + "Примеры использования: коробки, открытки, журналы, газеты, офисная бумага." + '\n\n' + rec[9] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
 # Metals
 
         elif 'сорок' in tokens or 'фу' in tokens or '40' in tokens or 'fu' in tokens:
-            message = mat[14] + '\n' + "Примеры использования: " + using[14] + '\n'+ rec[14]
+            message = mat[14] + '\n' + "Примеры использования: " + using[14] + '\n'+ rec[14] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('сорок' in tokens and 'один' in tokens) or '41' in tokens or 'ал' in tokens or 'al' in tokens or 'алу' in tokens or 'alu' in tokens:
-            message = mat[15] + '\n' + "Примеры использования: " + using[15] + '\n'+ rec[15]
+            message = mat[15] + '\n' + "Примеры использования: " + using[15] + '\n'+ rec[15] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
         
 # Organic materials of natural origin
@@ -140,8 +140,8 @@ def handler_function(request):
             tts = message
 
         elif 'шестьдесят' in tokens or '60' in tokens or 'tex' in tokens or 'текс' in tokens:
-            message = mat[18] + '\n' + "Примеры использования: " + using[18] + '\n'+ rec[18]
-            tts = "Хл`опок. Примеры использования: тканевые принадлежности, нити, вата. Одежду можно сдать на переработку или продать"
+            message = mat[18] + '\n' + "Примеры использования: " + using[18] + '\n'+ rec[18] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
+            tts = "Хл`опок. Примеры использования: тканевые принадлежности, нити, вата. Одежду можно сдать на переработку или продать" + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
 
         elif ('шестьдесят' in tokens and 'один' in tokens) or '61' in tokens:
             message = mat[19] + '\n' + "Примеры использования: " + using[19] + '\n'+ rec[19]
@@ -150,23 +150,23 @@ def handler_function(request):
 # Glass
 
         elif 'семьдесят' in tokens or '70' in tokens:
-            message = mat[20] + '\n' + using[20] + '\n'+ rec[20]
+            message = mat[20] + '\n' + using[20] + '\n'+ rec[20] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
         
         elif ('семьдесят' in tokens and 'один' in tokens) or '71' in tokens:
-            message = mat[21] + '\n' + using[21] + '\n'+ rec[21]
+            message = mat[21] + '\n' + using[21] + '\n'+ rec[21] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('семьдесят' in tokens and 'два' in tokens) or '72' in tokens:
-            message = mat[22] + '\n' + using[22] + '\n'+ rec[22]
+            message = mat[22] + '\n' + using[22] + '\n'+ rec[22] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
         
         elif ('семьдесят' in tokens and 'три' in tokens) or '73' in tokens:
-            message = mat[23] + '\n' + using[23] + '\n'+ rec[23]
+            message = mat[23] + '\n' + using[23] + '\n'+ rec[23] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('семьдесят' in tokens and 'четыре' in tokens) or '74' in tokens:
-            message = mat[24] + '\n' + using[24] + '\n'+ rec[24]
+            message = mat[24] + '\n' + using[24] + '\n'+ rec[24] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
         
         elif ('семьдесят' in tokens and 'пять' in tokens) or '75' in tokens:
@@ -196,23 +196,23 @@ def handler_function(request):
             tts = message
 
         elif ('восемьдесят' in tokens and 'один' in tokens) or '81' in tokens:
-            message = mat[31] + '\n' + "Примеры использования: " + using[31] + '\n'+ rec[31]
+            message = mat[31] + '\n' + "Примеры использования: " + using[31] + '\n'+ rec[31] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif ('восемьдесят' in tokens and 'два' in tokens) or '82' in tokens:
-            message = mat[32] + '\n' + "Примеры использования: " + using[32] + '\n'+ rec[32]
+            message = mat[32] + '\n' + "Примеры использования: " + using[32] + '\n'+ rec[32] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
         
         elif ('восемьдесят' in tokens and 'три' in tokens) or '83' in tokens:
-            message = mat[33] + '\n' + "Примеры использования: " + using[33] + '\n'+ rec[33]
+            message = mat[33] + '\n' + "Примеры использования: " + using[33] + '\n'+ rec[33] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
         
         elif ('восемьдесят' in tokens and 'четыре' in tokens) or '84' in tokens:
-            message = mat[34] + '\n' + using[34] + '\n'+ rec[34]
+            message = mat[34] + '\n' + using[34] + '\n'+ rec[34] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'c/pap' in tokens or 'с/рар' in tokens or 'эс пэп' in tokens or 'эс пап' in tokens:
-            message = mat[30] + '\n' + using[34] + '\n'+ rec[34]
+            message = mat[30] + '\n' + using[34] + '\n'+ rec[34] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'девяносто' in tokens or '90' in tokens or 'c/pe' in tokens or 'с/ре' in tokens or 'c/*' in tokens or 'с/*' in tokens:
@@ -246,32 +246,32 @@ def handler_function(request):
 # Batteries
 
         elif 'восемь' in tokens or '08' in tokens or '8' in tokens or 'lead' in tokens or 'pb' in tokens:
-            message = mat[42] + '\n' + using[42] + '\n' + rec[42]
+            message = mat[42] + '\n' + using[42] + '\n' + rec[42] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'девять' in tokens or '09' in tokens or '9' in tokens or '19' in tokens or 'alkaline' in tokens or 'алкалайн' in tokens:
-            message = mat[43] + '\n' + using[43] + '\n' + rec[43]
+            message = mat[43] + '\n' + using[43] + '\n' + rec[43] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'десять' in tokens or '10' in tokens or 'nicd' in tokens or 'ni-cd' in tokens:
-            message = mat[44] + '\n'+ using[44] + '\n' + rec[44]
-            tts = 'Н`икель-к`адмиевый аккумулятор. Используется в электронных устройствах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию'
+            message = mat[44] + '\n'+ using[44] + '\n' + rec[44] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
+            tts = 'Н`икель-к`адмиевый аккумулятор. Используется в электронных устройствах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
         
         elif 'одиннадцать' in tokens or 'nimh' in tokens or '11' in tokens or 'ni-mh' in tokens:
-            message = mat[45] + '\n' + using[45] + '\n' + rec[45]
-            tts = 'Н`икель-металл-гидридный аккумулятор. Используется в электронных устройствах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию'
+            message = mat[45] + '\n' + using[45] + '\n' + rec[45] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
+            tts = 'Н`икель-металл-гидридный аккумулятор. Используется в электронных устройствах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
         
         elif 'двенадцать' in tokens or '12' in tokens or 'li' in tokens or 'liion' in tokens or 'li-ion' in tokens or 'lion' in tokens:
-            message = mat[46] + '\n' + using[46] + '\n' + rec[46]
+            message = mat[46] + '\n' + using[46] + '\n' + rec[46] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'тринадцать' in tokens or '13' in tokens or 'so' in tokens or 'z' in tokens:
-            message = mat[47] + '\n' + using[47] + '\n' + rec[47]
+            message = mat[47] + '\n' + using[47] + '\n' + rec[47] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
 
         elif 'четырнадцать' in tokens or '14' in tokens or 'cz' in tokens:
-            message = mat[48] + '\n\n' + using[48] + '\n\n' + rec[48]
-            tts = 'М`арганцево-ц`инковый элемент. Используется в батарейках и аккумуляторах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию'
+            message = mat[48] + '\n\n' + using[48] + '\n\n' + rec[48] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
+            tts = 'М`арганцево-ц`инковый элемент. Используется в батарейках и аккумуляторах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
 
 
 
