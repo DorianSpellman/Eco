@@ -55,7 +55,8 @@ def handler_function(request):
             state = 100
 
         elif 'понятно' in tokens or 'понял' in tokens or 'поняла' in tokens or 'ясно' in tokens or 'хорошо' in tokens or 'окей' in tokens:
-            state = 10
+            message = 'Рада помочь!'
+            tts = message
 
 ### Main part
 
