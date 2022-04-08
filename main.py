@@ -215,7 +215,7 @@ def handler_function(request):
             message = mat[30] + '\n' + using[34] + '\n'+ rec[34]
             tts = message
 
-        elif 'девяносто' in tokens or '90' in tokens:
+        elif 'девяносто' in tokens or '90' in tokens or 'c/pe' in tokens or 'с/ре' in tokens or 'c/*' in tokens or 'с/*' in tokens:
             message = mat[35] + '\n' + "Примеры использования: " + using[35] + '\n'+ rec[35]
             tts = message
        
