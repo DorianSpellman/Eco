@@ -281,7 +281,7 @@ def handler_function(request):
 
         elif 'luv u' in tokens or '120701' in tokens or '12072001' in tokens  or '12.07.2001' in tokens  or 'love you' in tokens:
             message = 'luv u too, durling'
-            tts = 'love u too, durling'
+            tts = 'лав ю ту, дарлин'
 
 ### Another answer
         else:
