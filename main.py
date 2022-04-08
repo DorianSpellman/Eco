@@ -255,7 +255,7 @@ def handler_function(request):
 
         elif 'десять' in tokens or '10' in tokens or 'nicd' in tokens or 'ni-cd' in tokens:
             message = mat[44] + '\n'+ using[44] + '\n' + rec[44]
-            tts = 'Н`икель-кадмиевый аккумулятор. Используется в электронных устройствах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию'
+            tts = 'Н`икель-к`адмиевый аккумулятор. Используется в электронных устройствах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию'
         
         elif 'одиннадцать' in tokens or 'nimh' in tokens or '11' in tokens or 'ni-mh' in tokens:
             message = mat[45] + '\n' + using[45] + '\n' + rec[45]
