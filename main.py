@@ -232,7 +232,7 @@ def handler_function(request):
             tts = message
 
         elif ('девяносто' in tokens and 'шесть' in tokens) or '96' in tokens or 'c/alu' in tokens or 'эс алу' in tokens:
-            message = mat[39] + '\n' + "Примеры использования: " + using[39] + '\n'+ rec[39]
+            message = mat[39] + '\n' + using[39] + '\n'+ rec[39]
             tts = message
 
         elif ('девяносто' in tokens and 'семь' in tokens) or '97' in tokens:
