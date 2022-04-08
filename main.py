@@ -270,8 +270,8 @@ def handler_function(request):
             tts = message
 
         elif 'четырнадцать' in tokens or '14' in tokens or 'cz' in tokens:
-            message = mat[48] + '\n' + using[48] + '\n' + rec[48]
-            tts = message
+            message = mat[48] + '\n\n' + using[48] + '\n\n' + rec[48]
+            tts = 'М`арганцево-ц`инковый элемент. Используется в батарейках и аккумуляторах. Ни в коем случае не выбрасывайте! Обязательно сдайте в пункт приёма на утилизацию'
 
 
 
