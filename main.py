@@ -58,8 +58,8 @@ def handler_function(request):
 
 # Plastic
         elif 'один' in tokens or '01' in tokens or '1' in tokens or 'пэт' in tokens or 'pet' in tokens or 'pete' in tokens:
-            message = mat[0] + '\n'+ "Примеры использования: " + using[0] + '\n' + rec[0]
-            tts = message
+            message = mat[0] + '\n'+ "Примеры использования: " + using[0] + '\n' + rec[0] + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru/"
+            tts = message + "Ближайший пункт приёма вы можете найти на карте"
 
         elif 'два' in tokens or '02' in tokens or '2' in tokens or 'пэ' in tokens or 'пнд' in tokens or 'пэвп' in tokens or 'ашдипии' in tokens or 'хдпе' in tokens or 'hdpe' in tokens or 'pehd' in tokens:
             message = mat[1] + '\n' + "Примеры использования: " + using[1] + '\n'+ rec[1]
