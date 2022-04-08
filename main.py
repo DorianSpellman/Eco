@@ -280,7 +280,7 @@ def handler_function(request):
 
 
         elif 'luv' in tokens or '120701' in tokens or '12072001' in tokens  or '12.07.2001' in tokens  or 'love' in tokens :
-            message = 'luv u too, durling'
+            message = 'luv u too, durling ♡'
 
 ### Another answer
         else:
