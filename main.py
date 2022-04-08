@@ -288,7 +288,7 @@ def handler_function(request):
 ### Finish
 
     if state == 100:
-        boosty = "Если вам понравился навык, то вы можете поддержать автора! https://boosty.to/leomilevsky/single-payment/donation/75054?share=target_link"
+        boosty = "Если вам понравился навык, то вы можете поддержать автора: https://boosty.to/leomilevsky/single-payment/donation/75054?share=target_link"
         message = choice(['До новых встреч!', "Спасибо, что интересуетесь экологией!", "Проведите день с пользой!"]) + "\n\n"
         tts = message
         message += boosty
