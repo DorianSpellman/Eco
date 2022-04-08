@@ -40,7 +40,7 @@ def handler_function(request):
         buttons = [button('Что такое код?'), button('Что такое идентификатор?')]
         state = 10
 
-    ### Start    
+    ### Start question   
     elif state == 10:
 
         if 'код' in tokens or 'кот' in tokens:
@@ -55,128 +55,6 @@ def handler_function(request):
             state = 100
 
 ### Main part
-
-# Paper
-
-        elif ('двадцать' in tokens and 'один' in tokens) or '21' in tokens:
-            message = mat[10] + '\n' + "Примеры использования: " + using[10] + '\n'+ rec[10]
-            tts = message
-
-        elif ('двадцать' in tokens and 'два' in tokens) or '22' in tokens:
-            message = mat[11] + '\n' + "Примеры использования: " + using[11] + '\n'+ rec[11]
-            tts = message
-
-        elif ('двадцать' in tokens and 'три' in tokens) or '23' in tokens:
-            message = mat[12] + '\n' + "Примеры использования: " + using[12] + '\n'+ rec[12]
-            tts = message
-        
-        elif 'двадцать' in tokens or '20' in tokens:
-            message = mat[9] + '\n' + "Примеры использования: " + using[9] + '\n'+ rec[9]
-            tts = message
-        
-        elif 'пэп' in tokens or 'пап' in tokens or 'рар' in tokens or 'pap' in tokens:
-            message = "Целлюлозная продукция (гофрированный картон, картон, бумага)." + '\n\n' + "Примеры использования: коробки, открытки, журналы, газеты, офисная бумага." + '\n\n' + rec[9]
-            tts = message
-
-# Metals
-
-        elif ('сорок' in tokens and 'один' in tokens) or '41' in tokens or 'ал' in tokens or 'al' in tokens or 'алу' in tokens or 'alu' in tokens:
-            message = mat[14] + '\n' + "Примеры использования: " + using[14] + '\n'+ rec[14]
-            tts = message
-
-        elif 'сорок' in tokens or 'фу' in tokens or '40' in tokens or 'fu' in tokens:
-            message = mat[13] + '\n' + "Примеры использования: " + using[13] + '\n'+ rec[13]
-            tts = message
-        
-# Organic materials of natural origin
-
-        elif ('пятьдесят' in tokens and 'один' in tokens) or '51' in tokens:
-            message = mat[16] + '\n' + "Примеры использования: " + using[16] + '\n'+ rec[16]
-            tts = message
-
-        elif 'пятьдесят' in tokens or '50' in tokens or 'for' in tokens or 'фор' in tokens:
-            message = mat[15] + '\n' + "Примеры использования: " + using[15] + '\n'+ rec[15]
-            tts = message
-
-        elif ('шестьдесят' in tokens and 'один' in tokens) or '61' in tokens:
-            message = mat[18] + '\n' + "Примеры использования: " + using[18] + '\n'+ rec[18]
-            tts = message
-        
-        elif 'шестьдесят' in tokens or '60' in tokens or 'tex' in tokens or 'текс' in tokens:
-            message = mat[17] + '\n' + "Примеры использования: " + using[17] + '\n'+ rec[17]
-            tts = "Хл`опок. Примеры использования: тканевые принадлежности, нити, вата. Одежду можно сдать на переработку или продать"
-
-
-# Glass
-        
-        elif ('семьдесят' in tokens and 'один' in tokens) or '71' in tokens:
-            message = mat[20] + '\n' + using[20] + '\n'+ rec[20]
-            tts = message
-
-        elif ('семьдесят' in tokens and 'два' in tokens) or '72' in tokens:
-            message = mat[21] + '\n' + using[21] + '\n'+ rec[21]
-            tts = message
-        
-        elif ('семьдесят' in tokens and 'три' in tokens) or '73' in tokens:
-            message = mat[22] + '\n' + using[22] + '\n'+ rec[22]
-            tts = message
-
-        elif ('семьдесят' in tokens and 'четыре' in tokens) or '74' in tokens:
-            message = mat[23] + '\n' + using[23] + '\n'+ rec[23]
-            tts = message
-        
-        elif ('семьдесят' in tokens and 'пять' in tokens) or '75' in tokens:
-            message = mat[24] + '\n' + using[24] + '\n'+ rec[24]
-            tts = message
-
-        elif ('семьдесят' in tokens and 'шесть' in tokens) or '76' in tokens:
-            message = mat[25] + '\n' + "Примеры использования: " + using[25] + '\n'+ rec[25]
-            tts = message
-
-        elif ('семьдесят' in tokens and 'семь' in tokens) or '77' in tokens:
-            message = mat[26] + '\n' + using[26] + '\n'+ rec[26]
-            tts = message
-        
-        elif ('семьдесят' in tokens and 'восемь' in tokens) or '78' in tokens:
-            message = mat[27] + '\n' + using[27] + '\n'+ rec[27]
-            tts = message
-
-        elif ('семьдесят' in tokens and 'девять' in tokens) or '79' in tokens:
-            message = mat[28] + '\n' + using[28] + '\n'+ rec[28]
-            tts = message
-
-        elif 'семьдесят' in tokens or '70' in tokens:
-            message = mat[19] + '\n' + using[19] + '\n'+ rec[19]
-            tts = message
-        
-# Composite materials
-        elif ('восемьдесят' in tokens and 'один' in tokens) or '81' in tokens:
-            message = mat[29] + '\n' + "Примеры использования: " + using[29] + '\n'+ rec[29]
-            tts = message
-
-        elif ('восемьдесят' in tokens and 'два' in tokens) or '82' in tokens:
-            message = mat[30] + '\n' + "Примеры использования: " + using[30] + '\n'+ rec[30]
-            tts = message
-        
-        elif ('восемьдесят' in tokens and 'четыре' in tokens) or '84' in tokens:
-            message = mat[31] + '\n' + using[31] + '\n'+ rec[31]
-            tts = message
-       
-        elif ('девяносто' in tokens and 'два' in tokens) or '92' in tokens:
-            message = mat[33] + '\n' + "Примеры использования: " + using[33] + '\n'+ rec[33]
-            tts = message
-
-        elif ('девяносто' in tokens and 'восемь' in tokens) or '98' in tokens:
-            message = mat[34] + '\n' + using[34] + '\n'+ rec[34]
-            tts = message
-        
-        elif 'девяносто' in tokens or '90' in tokens:
-            message = mat[32] + '\n' + "Примеры использования: " + using[32] + '\n'+ rec[32]
-            tts = message
-            
-        elif 'эс лдпе' in tokens or 'эс алу' in tokens or 'эс пап' in tokens or 'эс пэпэ' in tokens or 'c/pap' in tokens or 'с/рар' in tokens or 'с/рр' in tokens or 'c/pp' in tokens or 'c/ldpe' in tokens or 'c/alu' in tokens:
-            message = "Композиционный материал, выполненный из смеси различных материалов" + '\n\n' + "Примеры использования: кофе, соусы, сгущенка, лапша быстрого приготовления, зубная паста, косметический крем" + '\n\n'+ rec[34]
-            tts = message
 
 # Plastic
         elif 'один' in tokens or '01' in tokens or '1' in tokens or 'пэт' in tokens or 'pet' in tokens or 'pete' in tokens:
@@ -216,8 +94,186 @@ def handler_function(request):
             tts = message
 
         elif 'pa' in tokens or 'па' in tokens or 'ра' in tokens:
+            message = mat[9] + '\n' + "Примеры использования: " + using[9] + '\n'+ rec[9]
+            tts = message
+
+# Paper
+
+        elif 'двадцать' in tokens or '20' in tokens:
+            message = mat[10] + '\n' + "Примеры использования: " + using[10] + '\n'+ rec[10]
+            tts = message
+
+        elif ('двадцать' in tokens and 'один' in tokens) or '21' in tokens:
+            message = mat[11] + '\n' + "Примеры использования: " + using[11] + '\n'+ rec[11]
+            tts = message
+
+        elif ('двадцать' in tokens and 'два' in tokens) or '22' in tokens:
+            message = mat[12] + '\n' + "Примеры использования: " + using[12] + '\n'+ rec[12]
+            tts = message
+
+        elif ('двадцать' in tokens and 'три' in tokens) or '23' in tokens:
+            message = mat[13] + '\n' + "Примеры использования: " + using[13] + '\n'+ rec[13]
+            tts = message
+                
+        elif 'пэп' in tokens or 'пап' in tokens or 'рар' in tokens or 'pap' in tokens:
+            message = "Целлюлозная продукция (гофрированный картон, картон, бумага)." + '\n\n' + "Примеры использования: коробки, открытки, журналы, газеты, офисная бумага." + '\n\n' + rec[9]
+            tts = message
+
+# Metals
+
+        elif 'сорок' in tokens or 'фу' in tokens or '40' in tokens or 'fu' in tokens:
+            message = mat[14] + '\n' + "Примеры использования: " + using[14] + '\n'+ rec[14]
+            tts = message
+
+        elif ('сорок' in tokens and 'один' in tokens) or '41' in tokens or 'ал' in tokens or 'al' in tokens or 'алу' in tokens or 'alu' in tokens:
+            message = mat[15] + '\n' + "Примеры использования: " + using[15] + '\n'+ rec[15]
+            tts = message
+        
+# Organic materials of natural origin
+
+        elif 'пятьдесят' in tokens or '50' in tokens or 'for' in tokens or 'фор' in tokens:
+            message = mat[16] + '\n' + "Примеры использования: " + using[16] + '\n'+ rec[16]
+            tts = message
+
+        elif ('пятьдесят' in tokens and 'один' in tokens) or '51' in tokens:
+            message = mat[17] + '\n' + "Примеры использования: " + using[17] + '\n'+ rec[17]
+            tts = message
+
+        elif 'шестьдесят' in tokens or '60' in tokens or 'tex' in tokens or 'текс' in tokens:
+            message = mat[18] + '\n' + "Примеры использования: " + using[18] + '\n'+ rec[18]
+            tts = "Хл`опок. Примеры использования: тканевые принадлежности, нити, вата. Одежду можно сдать на переработку или продать"
+
+        elif ('шестьдесят' in tokens and 'один' in tokens) or '61' in tokens:
+            message = mat[19] + '\n' + "Примеры использования: " + using[19] + '\n'+ rec[19]
+            tts = message     
+
+# Glass
+
+        elif 'семьдесят' in tokens or '70' in tokens:
+            message = mat[20] + '\n' + using[20] + '\n'+ rec[20]
+            tts = message
+        
+        elif ('семьдесят' in tokens and 'один' in tokens) or '71' in tokens:
+            message = mat[21] + '\n' + using[21] + '\n'+ rec[21]
+            tts = message
+
+        elif ('семьдесят' in tokens and 'два' in tokens) or '72' in tokens:
+            message = mat[22] + '\n' + using[22] + '\n'+ rec[22]
+            tts = message
+        
+        elif ('семьдесят' in tokens and 'три' in tokens) or '73' in tokens:
+            message = mat[23] + '\n' + using[23] + '\n'+ rec[23]
+            tts = message
+
+        elif ('семьдесят' in tokens and 'четыре' in tokens) or '74' in tokens:
+            message = mat[24] + '\n' + using[24] + '\n'+ rec[24]
+            tts = message
+        
+        elif ('семьдесят' in tokens and 'пять' in tokens) or '75' in tokens:
+            message = mat[25] + '\n' + using[25] + '\n'+ rec[25]
+            tts = message
+
+        elif ('семьдесят' in tokens and 'шесть' in tokens) or '76' in tokens:
+            message = mat[26] + '\n' + "Примеры использования: " + using[26] + '\n'+ rec[26]
+            tts = message
+
+        elif ('семьдесят' in tokens and 'семь' in tokens) or '77' in tokens:
+            message = mat[27] + '\n' + using[27] + '\n'+ rec[27]
+            tts = message
+        
+        elif ('семьдесят' in tokens and 'восемь' in tokens) or '78' in tokens:
+            message = mat[28] + '\n' + using[28] + '\n'+ rec[28]
+            tts = message
+
+        elif ('семьдесят' in tokens and 'девять' in tokens) or '79' in tokens:
+            message = mat[29] + '\n' + using[29] + '\n'+ rec[29]
+            tts = message
+        
+# Composite materials
+
+        elif 'восемьдесят' in tokens or '80' in tokens:
+            message = mat[30] + '\n' + "Примеры использования: " + using[30] + '\n'+ rec[30]
+            tts = message
+
+        elif ('восемьдесят' in tokens and 'один' in tokens) or '81' in tokens:
+            message = mat[31] + '\n' + "Примеры использования: " + using[31] + '\n'+ rec[31]
+            tts = message
+
+        elif ('восемьдесят' in tokens and 'два' in tokens) or '82' in tokens:
+            message = mat[32] + '\n' + "Примеры использования: " + using[32] + '\n'+ rec[32]
+            tts = message
+        
+        elif ('восемьдесят' in tokens and 'три' in tokens) or '83' in tokens:
+            message = mat[33] + '\n' + "Примеры использования: " + using[33] + '\n'+ rec[33]
+            tts = message
+        
+        elif ('восемьдесят' in tokens and 'четыре' in tokens) or '84' in tokens:
+            message = mat[34] + '\n' + using[34] + '\n'+ rec[34]
+            tts = message
+
+        elif 'c/pap' in tokens or 'с/рар' in tokens or 'эс пэп' in tokens or 'эс пап' in tokens:
+            message = mat[30] + '\n' + using[34] + '\n'+ rec[34]
+            tts = message
+
+        elif 'девяносто' in tokens or '90' in tokens:
             message = mat[35] + '\n' + "Примеры использования: " + using[35] + '\n'+ rec[35]
             tts = message
+       
+        elif ('девяносто' in tokens and 'один' in tokens) or '91' in tokens:
+            message = mat[36] + '\n' + "Примеры использования: " + using[36] + '\n'+ rec[36]
+            tts = message
+
+        elif ('девяносто' in tokens and 'два' in tokens) or '92' in tokens:
+            message = mat[37] + '\n' + "Примеры использования: " + using[37] + '\n'+ rec[37]
+            tts = message
+
+        elif ('девяносто' in tokens and 'пять' in tokens) or '95' in tokens:
+            message = mat[38] + '\n' + "Примеры использования: " + using[38] + '\n'+ rec[38]
+            tts = message
+
+        elif ('девяносто' in tokens and 'шесть' in tokens) or '96' in tokens or 'c/alu' in tokens or 'эс алу' in tokens:
+            message = mat[39] + '\n' + "Примеры использования: " + using[39] + '\n'+ rec[39]
+            tts = message
+
+        elif ('девяносто' in tokens and 'семь' in tokens) or '97' in tokens:
+            message = mat[40] + '\n' + "Примеры использования: " + using[40] + '\n'+ rec[40]
+            tts = message
+
+        elif ('девяносто' in tokens and 'восемь' in tokens) or '98' in tokens or 'c/gl' in tokens:
+            message = mat[41] + '\n' + using[41] + '\n'+ rec[41]
+            tts = message       
+
+# Batteries
+
+        elif 'восемь' in tokens or '08' in tokens or '8' in tokens or 'lead' in tokens or 'pb' in tokens:
+            message = mat[42] + '\n' + using[42] + '\n' + rec[42]
+            tts = message
+
+        elif 'девять' in tokens or '09' in tokens or '9' in tokens or '19' in tokens or 'alkaline' in tokens or 'алкалайн' in tokens:
+            message = mat[43] + '\n' + using[43] + '\n' + rec[43]
+            tts = message
+
+        elif 'десять' in tokens or '10' in tokens or 'nicd' in tokens or 'ni-cd' in tokens:
+            message = mat[44] + '\n'+ using[44] + '\n' + rec[44]
+            tts = message
+        
+        elif 'одиннадцать' in tokens or 'nimh' in tokens or '11' in tokens or 'ni-mh' in tokens:
+            message = mat[45] + '\n' + using[45] + '\n' + rec[45]
+            tts = message
+        
+        elif 'двенадцать' in tokens or '12' in tokens or 'li' in tokens or 'liion' in tokens or 'li-ion' in tokens or 'lion' in tokens:
+            message = mat[46] + '\n' + using[46] + '\n' + rec[46]
+            tts = message
+
+        elif 'тринадцать' in tokens or '13' in tokens or 'so' in tokens or 'z' in tokens:
+            message = mat[47] + '\n' + using[47] + '\n' + rec[47]
+            tts = message
+
+        elif 'четырнадцать' in tokens or '14' in tokens or 'cz' in tokens:
+            message = mat[48] + '\n' + using[48] + '\n' + rec[48]
+            tts = message
+
+
 
 ### Another answer
         else:
