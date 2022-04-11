@@ -115,6 +115,7 @@ def handler_function(request):
 
         elif 'gl' in tokens or 'гл' in tokens:
             message = 'Стекло.' + '\n\n' + 'Используется в производстве бутылок и баночек для эфирных масел.' + '\n\n' + 'Утилизовать можно стекло, имеющее код переработки с 70 по 74'
+            tts = message
 
         elif 'семьдесят' in tokens or '70' in tokens:
             message = mat[20] + '\n' + using[20] + '\n'+ rec[20] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
@@ -250,7 +251,7 @@ def handler_function(request):
         elif 'pa' in tokens or 'па' in tokens or 'ра' in tokens:
             message = mat[9] + '\n' + "Примеры использования: " + using[9] + '\n'+ rec[9] + '\n' + "Ближайший пункт приёма вы можете найти на карте: https://recyclemap.ru"
             tts = message
-            
+
 # Batteries
 
         elif 'восемь' in tokens or '08' in tokens or '8' in tokens or 'lead' in tokens or 'pb' in tokens:
